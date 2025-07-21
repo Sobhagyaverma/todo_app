@@ -11,4 +11,6 @@ document.getElementById('addButton').addEventListener('click', function() {
     const listItem = document.createElement('li');
     listItem.textContent = taskText;
     taskList.appendChild(listItem);
+
+    taskInput.value = ""; // Clear the input field
 });
