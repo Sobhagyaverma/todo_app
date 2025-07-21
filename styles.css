@@ -1,6 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    /* New background color */
+    background-color: #e0e7ff; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,11 +10,11 @@ body {
 }
 
 .container {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 350px;
+    background: #ffffff;
+    padding: 30px; /* Increased padding */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 400px; /* A bit wider */
     text-align: center;
 }
 
