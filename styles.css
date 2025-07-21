@@ -20,6 +20,7 @@ body {
 ul {
     list-style-type: none;
     padding: 0;
+    text-align: left;
 }
 
 li {
@@ -30,4 +31,14 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li span {
+    cursor: pointer;
+    flex-grow: 1;
 }
