@@ -12,6 +12,9 @@ document.getElementById('addButton').addEventListener('click', function() {
     
     const taskSpan = document.createElement('span');
     taskSpan.textContent = taskText;
+    taskSpan.onclick = function() {
+        listItem.classList.toggle('completed');
+    };
     listItem.appendChild(taskSpan);
 
     const deleteButton = document.createElement('button');
