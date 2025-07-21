@@ -68,3 +68,10 @@ button#addButton {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
+button#addButton:hover {
+    background-color: #5b21b6; /* Darker purple on hover */
+}
+
+li:hover {
+    background-color: #f3e8ff; /* Light purple highlight on hover */
+}
