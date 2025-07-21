@@ -43,3 +43,28 @@ li span {
     cursor: pointer;
     flex-grow: 1;
 }
+
+/* Add these new styles at the end of the file */
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #6d28d9; /* Highlight color on focus */
+}
+
+button#addButton {
+    padding: 10px 20px;
+    background-color: #6d28d9; /* A nice purple */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
