@@ -75,3 +75,15 @@ button#addButton:hover {
 li:hover {
     background-color: #f3e8ff; /* Light purple highlight on hover */
 }
+
+/* Add this to the end of styles.css */
+.delete-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ef4444; /* A nice red */
+}
+
+.delete-btn:hover {
+    color: #b91c1c; /* Darker red on hover */
+}
