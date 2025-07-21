@@ -1,7 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    /* New background color */
-    background-color: #e0e7ff; 
+    background-color: #e0e7ff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,11 +10,16 @@ body {
 
 .container {
     background: #ffffff;
-    padding: 30px; /* Increased padding */
-    border-radius: 15px; /* More rounded corners */
+    padding: 30px;
+    border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    width: 400px; /* A bit wider */
+    width: 400px;
     text-align: center;
+}
+
+h1 {
+    color: #374151;
+    margin-bottom: 20px;
 }
 
 ul {
@@ -25,13 +29,19 @@ ul {
 }
 
 li {
-    background: #eee;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 4px;
+    background: #f9fafb;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-left: 5px solid #6d28d9;
+    animation: fadeIn 0.5s ease;
+}
+
+li:hover {
+    background-color: #f3e8ff;
 }
 
 li.completed span {
@@ -44,7 +54,6 @@ li span {
     flex-grow: 1;
 }
 
-/* Add these new styles at the end of the file */
 input[type="text"] {
     width: 70%;
     padding: 10px;
@@ -55,12 +64,12 @@ input[type="text"] {
 
 input[type="text"]:focus {
     outline: none;
-    border-color: #6d28d9; /* Highlight color on focus */
+    border-color: #6d28d9;
 }
 
 button#addButton {
     padding: 10px 20px;
-    background-color: #6d28d9; /* A nice purple */
+    background-color: #6d28d9;
     color: white;
     border: none;
     border-radius: 5px;
@@ -68,22 +77,29 @@ button#addButton {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
+
 button#addButton:hover {
-    background-color: #5b21b6; /* Darker purple on hover */
+    background-color: #5b21b6;
 }
 
-li:hover {
-    background-color: #f3e8ff; /* Light purple highlight on hover */
-}
-
-/* Add this to the end of styles.css */
 .delete-btn {
     background: transparent;
     border: none;
     cursor: pointer;
-    color: #ef4444; /* A nice red */
+    color: #ef4444;
 }
 
 .delete-btn:hover {
-    color: #b91c1c; /* Darker red on hover */
+    color: #b91c1c;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
